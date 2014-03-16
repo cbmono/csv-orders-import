@@ -2,6 +2,7 @@ SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0;
 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0;
 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='TRADITIONAL';
 
+DROP SCHEMA IF EXISTS `returbo` ;
 CREATE SCHEMA IF NOT EXISTS `returbo` DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci ;
 USE `returbo` ;
 
@@ -14,12 +15,11 @@ CREATE  TABLE IF NOT EXISTS `returbo`.`customers` (
   `id` INT NOT NULL AUTO_INCREMENT ,
   `first_name` VARCHAR(60) NULL ,
   `last_name` VARCHAR(60) NULL ,
-  `email` VARCHAR(100) NOT NULL ,
+  `email` VARCHAR(100) NULL ,
   `phone` VARCHAR(45) NULL ,
   `created` DATETIME NULL ,
   `modified` DATETIME NULL ,
-  PRIMARY KEY (`id`) ,
-  UNIQUE INDEX `email` (`email` ASC) )
+  PRIMARY KEY (`id`) )
 ENGINE = InnoDB;
 
 
@@ -39,7 +39,7 @@ CREATE  TABLE IF NOT EXISTS `returbo`.`customer_addresses` (
   `zipcode` VARCHAR(10) NOT NULL ,
   `city` VARCHAR(45) NOT NULL ,
   `state` VARCHAR(45) NULL ,
-  `country` VARCHAR(45) NOT NULL ,
+  `country_code` VARCHAR(2) NOT NULL ,
   `created` DATETIME NULL ,
   `modified` DATETIME NULL ,
   PRIMARY KEY (`id`) ,
