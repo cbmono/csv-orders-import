@@ -3,6 +3,7 @@
 - partnerB: calculate total amount as: (qty * item_price) + shipping_total
 
 - Products without SKU and Name shouldn't be allowed
+- Customer: at least one field should be mandatory
 - Customer.email should be unique
 - Order should contain a copy of invoice and shipping address
 - CustomerAddress contains first_name and last_name to avoid problems in case buying something for someone else
