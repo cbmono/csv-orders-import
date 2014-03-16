@@ -85,10 +85,10 @@ VALUES
   -- partnerB.csv
   -- ----------------------
   (NULL, 5, 'John', 'Smith E', NULL, 'Heibergsvej2', '', '8600', 'Silkeborg', NULL, 'DK', NOW( ), NOW( )), 
-  (NULL, 6, 'John', 'Smith F', NULL, 'Neckelmannsgade18', '1. Tv', '4800', 'Nykøbing F', NULL, 'DK', NOW( ), NOW( )), 
+  (NULL, 6, 'John', 'Smith F', NULL, 'Neckelmannsgade18', '1. Tv', '4800', 'NykÃ¸bing F', NULL, 'DK', NOW( ), NOW( )), 
   (NULL, 7, 'John', 'Smith G', NULL, 'Vestergade83', '2.tv', '8600', 'Silkeborg', NULL, 'DK', NOW( ), NOW( )), 
-  (NULL, 8, 'John', 'Smith H', NULL, 'Hjortekærskrænten10', '', '2800', 'Kgs. Lyngby', NULL, 'DK', NOW( ), NOW( )), 
-  (NULL, 9, 'John', 'Smith I', NULL, 'Dybkærvænget10', '', '2640', 'Hedehusene', NULL, 'DK', NOW( ), NOW( ))
+  (NULL, 8, 'John', 'Smith H', NULL, 'HjortekÃ¦rskrÃ¦nten10', '', '2800', 'Kgs. Lyngby', NULL, 'DK', NOW( ), NOW( )), 
+  (NULL, 9, 'John', 'Smith I', NULL, 'DybkÃ¦rvÃ¦nget10', '', '2640', 'Hedehusene', NULL, 'DK', NOW( ), NOW( ))
 ;
 
 
