@@ -24,12 +24,19 @@ table tbody a {
 } 
 
 
-.full-list .actions .btn {
-  margin-top: 1.4em;
-  position: absolute;
+.full-list .toogle-btn {
+  display: block;
 }
 
 #actions-content h3 {
-  padding-left: 1.8em;
   margin-bottom: 1.2em;
+}
+
+.full-list table {
+  font-size: 80%;
+}
+
+.full-list table thead th {
+  vertical-align: top;
+  white-space: nowrap;
 }

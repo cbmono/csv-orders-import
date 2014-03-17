@@ -2,25 +2,23 @@
 
 
 <div class="row full-list">
-  <div class="col-md-2 actions">
-    <button type="button" class="btn btn-primary btn-sm">
-      <span class="glyphicon glyphicon-chevron-left"></span>
-    </button>
+  <button type="button" class="toogle-btn btn btn-primary btn-sm" data-toggle-el="#actions-content">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+  </button>
 
-    <div id="actions-content">
-      <h3><?=__('Actions')?></h3>
-      
-      <ul>
-        <li><?=$this->Html->link(__('List Orders'), array('controller' => 'orders', 'action' => 'index'))?> </li>
-        <li><?=$this->Html->link(__('New Order'), array('action' => 'add'))?></li>
-        <li><?=$this->Html->link(__('List Customers'), array('controller' => 'customers', 'action' => 'index'))?> </li>
-        <li><?=$this->Html->link(__('New Customer'), array('controller' => 'customers', 'action' => 'add'))?> </li>
-        <li><?=$this->Html->link(__('List Customer Addresses'), array('controller' => 'customer_addresses', 'action' => 'index'))?> </li>
-        <li><?=$this->Html->link(__('New Shippment Address'), array('controller' => 'customer_addresses', 'action' => 'add'))?> </li>
-        <li><?=$this->Html->link(__('List Order Items'), array('controller' => 'order_items', 'action' => 'index'))?> </li>
-        <li><?=$this->Html->link(__('New Order Item'), array('controller' => 'order_items', 'action' => 'add'))?> </li>
-      </ul>
-    </div>
+  <div id="actions-content" class="col-md-2 actions">
+    <h3><?=__('Actions')?></h3>
+    
+    <ul>
+      <li><?=$this->Html->link(__('List Orders'), array('controller' => 'orders', 'action' => 'index'))?> </li>
+      <li><?=$this->Html->link(__('New Order'), array('action' => 'add'))?></li>
+      <li><?=$this->Html->link(__('List Customers'), array('controller' => 'customers', 'action' => 'index'))?> </li>
+      <li><?=$this->Html->link(__('New Customer'), array('controller' => 'customers', 'action' => 'add'))?> </li>
+      <li><?=$this->Html->link(__('List Customer Addresses'), array('controller' => 'customer_addresses', 'action' => 'index'))?> </li>
+      <li><?=$this->Html->link(__('New Shippment Address'), array('controller' => 'customer_addresses', 'action' => 'add'))?> </li>
+      <li><?=$this->Html->link(__('List Order Items'), array('controller' => 'order_items', 'action' => 'index'))?> </li>
+      <li><?=$this->Html->link(__('New Order Item'), array('controller' => 'order_items', 'action' => 'add'))?> </li>
+    </ul>
   </div>
 
   <div class="col-md-10 orders">
