@@ -12,7 +12,7 @@ class CustomerAddress extends AppModel {
 		'full_address' => "CONCAT(
 			CustomerAddress.street_1, ', ', 
 			CustomerAddress.zipcode, ' ', 
-			CustomerAddress.city, ' ', 
+			CustomerAddress.city, ', ', 
 			CustomerAddress.country_code
 		)"
 	);
@@ -87,7 +87,7 @@ class CustomerAddress extends AppModel {
 
     // Update virtual fields with current model alias
     $this->virtualFields['full_address'] = sprintf(
-      "CONCAT(%s.street_1, ', ', %s.zipcode, ' ', %s.city, ' ', %s.country_code)", 
+      "CONCAT(%s.street_1, ', ', %s.zipcode, ' ', %s.city, ', ', %s.country_code)", 
       $this->alias, $this->alias, $this->alias, $this->alias
     );
 	}

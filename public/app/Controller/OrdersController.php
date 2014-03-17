@@ -19,6 +19,17 @@ class OrdersController extends AppController {
 	}
 
 /**
+ * Full list of orders method (displays all relations among all related tables)
+ *
+ * @return void
+ */
+	public function full_list() {
+
+		$this->Order->recursive = 1;
+		$this->set('orders', $this->Paginator->paginate());
+	}
+
+/**
  * view method
  *
  * @throws NotFoundException

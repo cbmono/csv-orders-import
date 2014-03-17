@@ -18,3 +18,18 @@ label {
   font-size: 74%;
   line-height: 1.3em;
 }
+
+table tbody a {
+  font-weight: normal;
+} 
+
+
+.full-list .actions .btn {
+  margin-top: 1.4em;
+  position: absolute;
+}
+
+#actions-content h3 {
+  padding-left: 1.8em;
+  margin-bottom: 1.2em;
+}
