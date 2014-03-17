@@ -7,9 +7,6 @@ App::uses('AppController', 'Controller');
  */
 class OrdersController extends AppController {
 
-	public $components = array('Paginator', 'Session');
-
-
 /**
  * index method
  *

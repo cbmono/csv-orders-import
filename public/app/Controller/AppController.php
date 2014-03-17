@@ -21,6 +21,7 @@
 
 App::uses('Controller', 'Controller');
 
+
 /**
  * Application Controller
  *
@@ -32,5 +33,5 @@ App::uses('Controller', 'Controller');
  */
 class AppController extends Controller {
 
-  public $components = array('DebugKit.Toolbar');
+  public $components = array('DebugKit.Toolbar', 'Paginator', 'Session');
 }
