@@ -8,17 +8,17 @@
 		</dd>
 		<dt><?php echo __('Customer'); ?></dt>
 		<dd>
-			<?php echo $this->Html->link($order['Customer']['email'], array('controller' => 'customers', 'action' => 'view', $order['Customer']['id'])); ?>
+			<?php echo $this->Html->link($order['Customer']['full_name'], array('controller' => 'customers', 'action' => 'view', $order['Customer']['id'])); ?>
 			&nbsp;
 		</dd>
 		<dt><?php echo __('Shippment Address'); ?></dt>
 		<dd>
-			<?php echo $this->Html->link($order['ShippmentAddress']['id'], array('controller' => 'customer_addresses', 'action' => 'view', $order['ShippmentAddress']['id'])); ?>
+			<?php echo $this->Html->link($order['ShippmentAddress']['full_address'], array('controller' => 'customer_addresses', 'action' => 'view', $order['ShippmentAddress']['id'])); ?>
 			&nbsp;
 		</dd>
 		<dt><?php echo __('Invoice Address'); ?></dt>
 		<dd>
-			<?php echo $this->Html->link($order['InvoiceAddress']['id'], array('controller' => 'customer_addresses', 'action' => 'view', $order['InvoiceAddress']['id'])); ?>
+			<?php echo $this->Html->link($order['InvoiceAddress']['full_address'], array('controller' => 'customer_addresses', 'action' => 'view', $order['InvoiceAddress']['id'])); ?>
 			&nbsp;
 		</dd>
 		<dt><?php echo __('Grand Total'); ?></dt>
