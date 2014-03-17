@@ -68,7 +68,7 @@ class AppSchema extends CakeSchema {
 		'indexes' => array(
 			'PRIMARY' => array('column' => 'id', 'unique' => 1),
 			'customer_id' => array('column' => 'customer_id', 'unique' => 0),
-			'shipment_address_id' => array('column' => 'shipment_address_id', 'unique' => 0),
+			'shippment_address_id' => array('column' => 'shipment_address_id', 'unique' => 0),
 			'invoice_address_id' => array('column' => 'invoice_address_id', 'unique' => 0)
 		),
 		'tableParameters' => array('charset' => 'utf8', 'collate' => 'utf8_unicode_ci', 'engine' => 'InnoDB')
