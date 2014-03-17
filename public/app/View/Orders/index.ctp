@@ -4,8 +4,8 @@
 	<tr>
 			<th><?php echo $this->Paginator->sort('id'); ?></th>
 			<th><?php echo $this->Paginator->sort('customer_id'); ?></th>
-			<th><?php echo $this->Paginator->sort('shippment_address_id'); ?></th>
-			<th><?php echo $this->Paginator->sort('invoice_address_id'); ?></th>
+			<th><?php echo $this->Paginator->sort('ShippmentAddress.full_address', 'Shippment Address'); ?></th>
+			<th><?php echo $this->Paginator->sort('InvoiceAddress.full_address', 'Invoice Address'); ?></th>
 			<th><?php echo $this->Paginator->sort('grand_total'); ?></th>
 			<th><?php echo $this->Paginator->sort('created'); ?></th>
 			<th><?php echo $this->Paginator->sort('modified'); ?></th>
