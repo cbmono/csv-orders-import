@@ -21,7 +21,7 @@ class Order extends AppModel {
 				//'on' => 'create', // Limit validation to 'create' or 'update' operations
 			),
 		),
-		'shippment_address_id' => array(
+		'shipment_address_id' => array(
 			'numeric' => array(
 				'rule' => array('numeric')
 			),
@@ -46,9 +46,9 @@ class Order extends AppModel {
 			'className' => 'Customer',
 			'foreignKey' => 'customer_id'
 		),
-		'ShippmentAddress' => array(
+		'ShipmentAddress' => array(
 			'className' => 'CustomerAddress',
-			'foreignKey' => 'shippment_address_id'
+			'foreignKey' => 'shipment_address_id'
 		),
 		'InvoiceAddress' => array(
 			'className' => 'CustomerAddress',

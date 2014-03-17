@@ -15,7 +15,7 @@
       <li><?=$this->Html->link(__('List Customers'), array('controller' => 'customers', 'action' => 'index'))?> </li>
       <li><?=$this->Html->link(__('New Customer'), array('controller' => 'customers', 'action' => 'add'))?> </li>
       <li><?=$this->Html->link(__('List Customer Addresses'), array('controller' => 'customer_addresses', 'action' => 'index'))?> </li>
-      <li><?=$this->Html->link(__('New Shippment Address'), array('controller' => 'customer_addresses', 'action' => 'add'))?> </li>
+      <li><?=$this->Html->link(__('New Customer Address'), array('controller' => 'customer_addresses', 'action' => 'add'))?> </li>
       <li><?=$this->Html->link(__('List Order Items'), array('controller' => 'order_items', 'action' => 'index'))?> </li>
       <li><?=$this->Html->link(__('New Order Item'), array('controller' => 'order_items', 'action' => 'add'))?> </li>
     </ul>
@@ -34,16 +34,16 @@
             <th><?=$this->Paginator->sort('Customer.email')?></th>
             <th><?=$this->Paginator->sort('Customer.phone')?></th>
 
-            <th><?=$this->Paginator->sort('ShippmentAddress.id')?></th>
-            <th><?=$this->Paginator->sort('ShippmentAddress.first_name', 'Shipment first name')?></th>
-            <th><?=$this->Paginator->sort('ShippmentAddress.last_name', 'Shipment last name')?></th>
-            <th><?=$this->Paginator->sort('ShippmentAddress.company', 'Shipment company')?></th>
-            <th><?=$this->Paginator->sort('ShippmentAddress.street_1', 'Shipment street_1')?></th>
-            <th><?=$this->Paginator->sort('ShippmentAddress.street_2', 'Shipment street_2')?></th>
-            <th><?=$this->Paginator->sort('ShippmentAddress.zipcode', 'Shipment zip code')?></th>
-            <th><?=$this->Paginator->sort('ShippmentAddress.city', 'Shipment city')?></th>
-            <th><?=$this->Paginator->sort('ShippmentAddress.state', 'Shipment state')?></th>
-            <th><?=$this->Paginator->sort('ShippmentAddress.country_code', 'Shipment country code')?></th>
+            <th><?=$this->Paginator->sort('ShipmentAddress.id')?></th>
+            <th><?=$this->Paginator->sort('ShipmentAddress.first_name', 'Shipment first name')?></th>
+            <th><?=$this->Paginator->sort('ShipmentAddress.last_name', 'Shipment last name')?></th>
+            <th><?=$this->Paginator->sort('ShipmentAddress.company', 'Shipment company')?></th>
+            <th><?=$this->Paginator->sort('ShipmentAddress.street_1', 'Shipment street_1')?></th>
+            <th><?=$this->Paginator->sort('ShipmentAddress.street_2', 'Shipment street_2')?></th>
+            <th><?=$this->Paginator->sort('ShipmentAddress.zipcode', 'Shipment zip code')?></th>
+            <th><?=$this->Paginator->sort('ShipmentAddress.city', 'Shipment city')?></th>
+            <th><?=$this->Paginator->sort('ShipmentAddress.state', 'Shipment state')?></th>
+            <th><?=$this->Paginator->sort('ShipmentAddress.country_code', 'Shipment country code')?></th>
 
             <th><?=$this->Paginator->sort('InvoiceAddress.id')?></th>
             <th><?=$this->Paginator->sort('InvoiceAddress.first_name', 'Invoice first name')?></th>
@@ -81,19 +81,19 @@
 
           <td>
             <?=$this->Html->link(
-              $order['ShippmentAddress']['id'], 
-              array('controller' => 'customer_addresses', 'action' => 'view', $order['ShippmentAddress']['id'])
+              $order['ShipmentAddress']['id'], 
+              array('controller' => 'customer_addresses', 'action' => 'view', $order['ShipmentAddress']['id'])
             )?>
           </td>
-          <td><?=h($order['ShippmentAddress']['first_name'])?></td>
-          <td><?=h($order['ShippmentAddress']['last_name'])?></td>
-          <td><?=h($order['ShippmentAddress']['company'])?></td>
-          <td><?=h($order['ShippmentAddress']['street_1'])?></td>
-          <td><?=h($order['ShippmentAddress']['street_2'])?></td>
-          <td><?=h($order['ShippmentAddress']['zipcode'])?></td>
-          <td><?=h($order['ShippmentAddress']['city'])?></td>
-          <td><?=h($order['ShippmentAddress']['state'])?></td>
-          <td><?=h($order['ShippmentAddress']['country_code'])?></td>
+          <td><?=h($order['ShipmentAddress']['first_name'])?></td>
+          <td><?=h($order['ShipmentAddress']['last_name'])?></td>
+          <td><?=h($order['ShipmentAddress']['company'])?></td>
+          <td><?=h($order['ShipmentAddress']['street_1'])?></td>
+          <td><?=h($order['ShipmentAddress']['street_2'])?></td>
+          <td><?=h($order['ShipmentAddress']['zipcode'])?></td>
+          <td><?=h($order['ShipmentAddress']['city'])?></td>
+          <td><?=h($order['ShipmentAddress']['state'])?></td>
+          <td><?=h($order['ShipmentAddress']['country_code'])?></td>
 
           <td>
             <?=$this->Html->link(

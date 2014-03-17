@@ -55,14 +55,14 @@ DROP TABLE IF EXISTS `returbo`.`orders` ;
 CREATE  TABLE IF NOT EXISTS `returbo`.`orders` (
   `id` INT NOT NULL AUTO_INCREMENT ,
   `customer_id` INT NOT NULL ,
-  `shippment_address_id` INT NOT NULL ,
+  `shipment_address_id` INT NOT NULL ,
   `invoice_address_id` INT NOT NULL ,
   `grand_total` FLOAT NOT NULL ,
   `created` DATETIME NULL ,
   `modified` DATETIME NULL ,
   PRIMARY KEY (`id`) ,
   INDEX `customer_id` (`customer_id` ASC) ,
-  INDEX `shippment_address_id` (`shippment_address_id` ASC) ,
+  INDEX `shipment_address_id` (`shipment_address_id` ASC) ,
   INDEX `invoice_address_id` (`invoice_address_id` ASC) )
 ENGINE = InnoDB;
 

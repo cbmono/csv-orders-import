@@ -109,7 +109,7 @@
 	<tr>
 		<th><?php echo __('Id'); ?></th>
 		<th><?php echo __('Customer Id'); ?></th>
-		<th><?php echo __('Shippment Address Id'); ?></th>
+		<th><?php echo __('Shipment Address Id'); ?></th>
 		<th><?php echo __('Invoice Address Id'); ?></th>
 		<th><?php echo __('Grand Total'); ?></th>
 		<th><?php echo __('Created'); ?></th>
@@ -120,7 +120,7 @@
 		<tr>
 			<td><?php echo $order['id']; ?></td>
 			<td><?php echo $order['customer_id']; ?></td>
-			<td><?php echo $order['shippment_address_id']; ?></td>
+			<td><?php echo $order['shipment_address_id']; ?></td>
 			<td><?php echo $order['invoice_address_id']; ?></td>
 			<td><?php echo $order['grand_total']; ?></td>
 			<td><?php echo $order['created']; ?></td>

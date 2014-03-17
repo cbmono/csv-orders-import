@@ -99,7 +99,7 @@ TRUNCATE TABLE `returbo`.`orders`;
 INSERT INTO  `returbo`.`orders` (
   `id`,
   `customer_id`,
-  `shippment_address_id`,
+  `shipment_address_id`,
   `invoice_address_id`,
   `grand_total`,
   `created`,

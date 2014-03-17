@@ -67,9 +67,9 @@ class OrdersController extends AppController {
 		}
 
 		$customers = $this->Order->Customer->find('list');
-		$shippmentAddresses = $this->Order->ShippmentAddress->find('list');
+		$ShipmentAddresses = $this->Order->ShipmentAddress->find('list');
 		$invoiceAddresses = $this->Order->InvoiceAddress->find('list');
-		$this->set(compact('customers', 'shippmentAddresses', 'invoiceAddresses'));
+		$this->set(compact('customers', 'ShipmentAddresses', 'invoiceAddresses'));
 	}
 
 /**
@@ -101,9 +101,9 @@ class OrdersController extends AppController {
 		}
 		
 		$customers = $this->Order->Customer->find('list');
-		$shippmentAddresses = $this->Order->ShippmentAddress->find('list');
+		$ShipmentAddresses = $this->Order->ShipmentAddress->find('list');
 		$invoiceAddresses = $this->Order->InvoiceAddress->find('list');
-		$this->set(compact('customers', 'shippmentAddresses', 'invoiceAddresses'));
+		$this->set(compact('customers', 'ShipmentAddresses', 'invoiceAddresses'));
 	}
 
 /**
