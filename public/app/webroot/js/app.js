@@ -21,4 +21,10 @@ $( document ).ready(function() {
 
     btn.blur();
   });
+
+
+  /**
+   * Add filter options to "Orders full list" table
+   */
+  $('#orders-full-list').DataTable();
 });

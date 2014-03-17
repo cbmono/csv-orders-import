@@ -23,42 +23,42 @@
 
   <div class="col-md-10 orders">
     <h2><?=__('Orders full list')?></h2>
-    <table class="table table-condensed table-bordered">
+    <table id="orders-full-list" class="table table-condensed table-bordered">
       <thead>
         <tr>
-            <th><?=$this->Paginator->sort('id', 'Order id')?></th>
+            <th>Order ID</th>
 
-            <th><?=$this->Paginator->sort('Customer.id')?></th>
-            <th><?=$this->Paginator->sort('Customer.first_name')?></th>
-            <th><?=$this->Paginator->sort('Customer.last_name')?></th>
-            <th><?=$this->Paginator->sort('Customer.email')?></th>
-            <th><?=$this->Paginator->sort('Customer.phone')?></th>
+            <th>Customer ID</th>
+            <th>Customer first name</th>
+            <th>Customer last name</th>
+            <th>Customer email</th>
+            <th>Customer phone</th>
 
-            <th><?=$this->Paginator->sort('ShipmentAddress.id')?></th>
-            <th><?=$this->Paginator->sort('ShipmentAddress.first_name', 'Shipment first name')?></th>
-            <th><?=$this->Paginator->sort('ShipmentAddress.last_name', 'Shipment last name')?></th>
-            <th><?=$this->Paginator->sort('ShipmentAddress.company', 'Shipment company')?></th>
-            <th><?=$this->Paginator->sort('ShipmentAddress.street_1', 'Shipment street_1')?></th>
-            <th><?=$this->Paginator->sort('ShipmentAddress.street_2', 'Shipment street_2')?></th>
-            <th><?=$this->Paginator->sort('ShipmentAddress.zipcode', 'Shipment zip code')?></th>
-            <th><?=$this->Paginator->sort('ShipmentAddress.city', 'Shipment city')?></th>
-            <th><?=$this->Paginator->sort('ShipmentAddress.state', 'Shipment state')?></th>
-            <th><?=$this->Paginator->sort('ShipmentAddress.country_code', 'Shipment country code')?></th>
+            <th>Shipment address ID</th>
+            <th>Shipment first name</th>
+            <th>Shipment last name</th>
+            <th>Shipment company</th>
+            <th>Shipment street_1</th>
+            <th>Shipment street_2</th>
+            <th>Shipment zip code</th>
+            <th>Shipment city</th>
+            <th>Shipment state</th>
+            <th>Shipment country code</th>
 
-            <th><?=$this->Paginator->sort('InvoiceAddress.id')?></th>
-            <th><?=$this->Paginator->sort('InvoiceAddress.first_name', 'Invoice first name')?></th>
-            <th><?=$this->Paginator->sort('InvoiceAddress.last_name', 'Invoice last name')?></th>
-            <th><?=$this->Paginator->sort('InvoiceAddress.company', 'Invoice company')?></th>
-            <th><?=$this->Paginator->sort('InvoiceAddress.street_1', 'Invoice street_1')?></th>
-            <th><?=$this->Paginator->sort('InvoiceAddress.street_2', 'Invoice street_2')?></th>
-            <th><?=$this->Paginator->sort('InvoiceAddress.zipcode', 'Invoice zip code')?></th>
-            <th><?=$this->Paginator->sort('InvoiceAddress.city', 'Invoice city')?></th>
-            <th><?=$this->Paginator->sort('InvoiceAddress.state', 'Invoice state')?></th>
-            <th><?=$this->Paginator->sort('InvoiceAddress.country_code', 'Invoice country code')?></th>
+            <th>Invoice address ID</th>
+            <th>Invoice first name</th>
+            <th>Invoice last name</th>
+            <th>Invoice company</th>
+            <th>Invoice street_1</th>
+            <th>Invoice street_2</th>
+            <th>Invoice zip code</th>
+            <th>Invoice city</th>
+            <th>Invoice state</th>
+            <th>Invoice country code</th>
             
-            <th><?=$this->Paginator->sort('grand_total', 'Order grand total')?></th>
-            <th><?=$this->Paginator->sort('created', 'Order created')?></th>
-            <th><?=$this->Paginator->sort('modified', 'Order modified')?></th>
+            <th>Order grand total</th>
+            <th>Order created</th>
+            <th>Order modified</th>
             <th class="actions"><?=__('Actions')?></th>
         </tr>
       </thead>
@@ -128,21 +128,6 @@
       </tbody>
     </table>
 
-    <p>
-    <?php
-      echo $this->Paginator->counter(array(
-        'format' => __('Page {:page} of {:pages}, showing {:current} records out of {:count} total, starting on record {:start}, ending on {:end}')
-      ));
-    ?>  
-    </p>
-    
-    <div class="paging">
-    <?php
-      echo $this->Paginator->prev('< ' . __('previous'), array(), null, array('class' => 'prev disabled'));
-      echo $this->Paginator->numbers(array('separator' => ''));
-      echo $this->Paginator->next(__('next') . ' >', array(), null, array('class' => 'next disabled'));
-    ?>
-    </div>
   </div>
 </div>
 

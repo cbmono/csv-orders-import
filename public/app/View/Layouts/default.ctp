@@ -34,6 +34,7 @@
 		echo $this->Html->css('cake.generic');
 		echo $this->Html->css('//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css');
 		echo $this->Html->css('//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css');
+		echo $this->Html->css('//cdn.datatables.net/1.9.4/css/jquery.dataTables.css');
 		echo $this->Html->css('style');
 
 		echo $this->fetch('meta');
@@ -61,10 +62,9 @@
 		</div>
 	</div>
 
-	<!-- Latest compiled and minified JavaScript -->
-	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
-	<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
-
+	<?php echo $this->Html->script('//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.0/jquery.min.js'); ?>
+	<?php echo $this->Html->script('//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js'); ?>
+	<?php echo $this->Html->script('//cdn.datatables.net/1.9.4/js/jquery.dataTables.min.js'); ?>
 	<?php echo $this->Html->script('app'); ?>
 </body>
 </html>

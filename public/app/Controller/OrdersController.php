@@ -26,7 +26,7 @@ class OrdersController extends AppController {
 	public function full_list() {
 
 		$this->Order->recursive = 1;
-		$this->set('orders', $this->Paginator->paginate());
+		$this->set('orders', $this->Order->find('all'));
 	}
 
 /**

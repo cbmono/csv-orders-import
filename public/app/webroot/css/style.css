@@ -1,3 +1,6 @@
+/** Overwriting Cake default settings 
+ ******************************************/
+
 dt, dd {
   line-height: 2em;
 }
@@ -24,6 +27,10 @@ table tbody a {
 } 
 
 
+
+/** Full list table
+ ******************************************/
+
 .full-list .toogle-btn {
   display: block;
 }
@@ -39,4 +46,28 @@ table tbody a {
 .full-list table thead th {
   vertical-align: top;
   white-space: nowrap;
+}
+
+
+/** DateTable
+ ******************************************/
+
+table.dataTable tr.odd {
+background-color: #f9f9f9;
+}
+
+table.dataTable tr.odd td.sorting_1 {
+  background-color: #efefef
+}
+
+table.dataTable tr.even td.sorting_1 {
+  background-color: #fdfdfd;
+}
+
+.dataTables_length {
+  margin-top: 27px;
+}
+
+.dataTables_filter {
+  margin-bottom: 14px;
 }
