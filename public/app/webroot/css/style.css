@@ -13,3 +13,8 @@ dd {
 label {
   display: block;
 }
+
+.cake-debug, .cake-error {
+  font-size: 74%;
+  line-height: 1.3em;
+}
