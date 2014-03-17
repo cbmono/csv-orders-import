@@ -55,6 +55,13 @@
             <th>Invoice city</th>
             <th>Invoice state</th>
             <th>Invoice country code</th>
+
+            <th>Order item ID</th>
+            <th>Order item product ID</th>
+            <th>Order item product</th>
+            <th>Order item product SKU</th>
+            <th>Order item quantity</th>
+            <th>Order item price per unit</th>
             
             <th>Order grand total</th>
             <th>Order created</th>
@@ -110,6 +117,13 @@
           <td><?=h($order['InvoiceAddress']['city'])?></td>
           <td><?=h($order['InvoiceAddress']['state'])?></td>
           <td><?=h($order['InvoiceAddress']['country_code'])?></td>
+
+          <td><?=h($order['OrderItem']['id'])?></td>
+          <td><?=h($order['Product']['id'])?></td>
+          <td><?=h($order['Product']['name'])?></td>
+          <td><?=h($order['Product']['sku'])?></td>
+          <td><?=h($order['OrderItem']['quantity'])?></td>
+          <td><?=h($order['OrderItem']['price_unit'])?></td>
 
           <td><?=h($order['Order']['grand_total'])?></td>
           <td><?=h($order['Order']['created'])?></td>

@@ -7,6 +7,8 @@ App::uses('AppModel', 'Model');
  */
 class Order extends AppModel {
 
+	public $actsAs = array('Containable');
+
 /**
  * Validation rules
  */
@@ -66,4 +68,32 @@ class Order extends AppModel {
 			'dependent' => true
 		)
 	);
+
+
+/**
+ * Get the full list of order items and every relevant Order details (Product, Order, Customer, ShipmentAddress, etc.)
+ *
+ * @return array
+ */
+	public function fullList() {
+
+		$orderItems = $this->OrderItem->find('all', array(
+			'contain' => array(
+				'Product', 
+				'Order' => array('Customer', 'ShipmentAddress', 'InvoiceAddress'))
+		));
+
+		// Simplify (flatten) $orderItems array structure
+		foreach ($orderItems as $key => $orderItem) {
+			$orderItems[$key]['Customer'] = $orderItem['Order']['Customer'];
+			$orderItems[$key]['ShipmentAddress'] = $orderItem['Order']['ShipmentAddress'];
+			$orderItems[$key]['InvoiceAddress'] = $orderItem['Order']['InvoiceAddress'];
+
+			unset($orderItems[$key]['Order']['Customer']);
+			unset($orderItems[$key]['Order']['ShipmentAddress']);
+			unset($orderItems[$key]['Order']['InvoiceAddress']);
+		}
+
+		return $orderItems;
+	}
 }
