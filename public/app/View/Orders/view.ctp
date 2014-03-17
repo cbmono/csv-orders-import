@@ -44,6 +44,7 @@
 		<li><?php echo $this->Html->link(__('Edit Order'), array('action' => 'edit', $order['Order']['id'])); ?> </li>
 		<li><?php echo $this->Form->postLink(__('Delete Order'), array('action' => 'delete', $order['Order']['id']), null, __('Are you sure you want to delete # %s?', $order['Order']['id'])); ?> </li>
 		<li><?php echo $this->Html->link(__('List Orders'), array('action' => 'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('List Orders full'), array('controller' => 'orders', 'action' => 'full_list')); ?> </li>
 		<li><?php echo $this->Html->link(__('New Order'), array('action' => 'add')); ?> </li>
 		<li><?php echo $this->Html->link(__('List Customers'), array('controller' => 'customers', 'action' => 'index')); ?> </li>
 		<li><?php echo $this->Html->link(__('New Customer'), array('controller' => 'customers', 'action' => 'add')); ?> </li>
