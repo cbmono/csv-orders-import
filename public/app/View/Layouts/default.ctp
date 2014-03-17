@@ -34,6 +34,7 @@
 		echo $this->Html->css('cake.generic');
 		echo $this->Html->css('//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css');
 		echo $this->Html->css('//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css');
+		echo $this->Html->css('style');
 
 		echo $this->fetch('meta');
 		echo $this->fetch('css');
@@ -42,19 +43,22 @@
 </head>
 
 <body>
-	<div id="container">
-		<header>
-			<h1>Basic fulfillment tool</h1>
-		</header>
-		
-		<div id="content">
+  
+	<div id="container" class="container-fluid">
+		<div class="row">
+			<header>
+				<h1>Basic fulfillment tool</h1>
+			</header>
+			
+			<div id="content">
 
-			<?php echo $this->Session->flash(); ?>
+				<?php echo $this->Session->flash(); ?>
 
-			<?php echo $this->fetch('content'); ?>
+				<?php echo $this->fetch('content'); ?>
+			</div>
+
+			<footer></footer>
 		</div>
-
-		<footer></footer>
 	</div>
 
 	<!-- Latest compiled and minified JavaScript -->

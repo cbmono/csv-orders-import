@@ -1,6 +1,6 @@
 <div class="products index">
 	<h2><?php echo __('Products'); ?></h2>
-	<table cellpadding="0" cellspacing="0">
+	<table class="table table-condensed table-bordered">
 	<tr>
 			<th><?php echo $this->Paginator->sort('id'); ?></th>
 			<th><?php echo $this->Paginator->sort('sku'); ?></th>

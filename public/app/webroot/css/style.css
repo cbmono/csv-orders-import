@@ -1,0 +1,15 @@
+dt, dd {
+  line-height: 2em;
+}
+
+dd {
+  margin-left: 10em;
+}
+
+.related {
+  padding-top: 1em;
+}
+
+label {
+  display: block;
+}
