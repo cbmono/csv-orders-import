@@ -3,7 +3,7 @@
 
 <div class="row full-list">
   <button type="button" class="toogle-btn btn btn-primary btn-sm" data-toggle-el="#actions-content">
-    <span class="glyphicon glyphicon-chevron-left"></span>
+    <span class="glyphicon glyphicon-chevron-left"></span> <span class="action-label">Hide</span> actions
   </button>
 
   <div id="actions-content" class="col-md-2 actions">
