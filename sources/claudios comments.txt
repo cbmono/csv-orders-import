@@ -1,12 +1,22 @@
-- Assumption: partnerA.PORPOS --> total amount (price)
+- Assumption: partnerA.PORPOS --> used as price (grand_total)
 - Assumption: partnerA.PRAEMIENNUMMER --> product sku
-- partnerB: calculate total amount as: (qty * item_price) + shipping_total
+- partnerB.csv: calculated total amount as: (qty * item_price) + shipping_total
 
 - Products without SKU and Name shouldn't be allowed
 - Customer: at least one field should be mandatory
 - Customer.email should be unique
-- Order should contain a copy of invoice and shipping address
 - CustomerAddress contains first_name and last_name to avoid problems in case buying something for someone else
-- Added a postfix to every last_name (Smith [A-I]) to avoid confusion
-- Maybe it would make sense to save all customer address details into tbl:orders
-- 
+- Added a postfix to every last_name (Smith [A-I]) to avoid confusion, since we only have "John Smith's"
+- Orders without any kind of price shouldn't be allowed
+- Order should contain a copy of invoice and shipping address
+
+- Stata (http://www.stata.com/) was used for mapping and cleaning 
+
+- Used tools:
+
+  - CakePHP 2.4.6
+  - Bootstrap 3.1.1
+  - jQuery 2.1.0
+  - DataTable 1.9.4 (jQuery Plugin) 
+  - WorkBench 5.2.38
+  - Photoshop CS6
